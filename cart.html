@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainify</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active"  href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <main>
+        <section class="products">
+            <h2 class="productss">Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="img/products/f1.jpg" alt="Product 1">
+                    <h3>Men's Half Sleeve Printed Shirt</h3>
+                    <p>&#8377; 299</p>
+                    <button onclick="addToCart('Mens Half Sleeve Printed Shirt: ', 299)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h2.jpg" alt="Product 2">
+                    <h3>Casual Shirt for Men</h3>
+                    <p>&#8377; 349</p>
+                    <button onclick="addToCart('Casual Shirt for Men: ', 349)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h3.jpg" alt="Product 2">
+                    <h3>Denim Shirt</h3>
+                    <p>&#8377; 899</p>
+                    <button onclick="addToCart('Denim Shirt: ', 899)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h4.jpg" alt="Product 2">
+                    <h3>Baggy Jeans for Men</h3>
+                    <p>&#8377; 999</p>
+                    <button onclick="addToCart('Baggy Jeans for Men: ', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h5.jpg" alt="Product 2">
+                    <h3>Ruffle A-Line Dress</h3>
+                    <p>&#8377; 749</p>
+                    <button onclick="addToCart('Ruffle A-Line Dress: ', 749)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h6.jpg" alt="Product 2">
+                    <h3>Western Dresses for Women</h3>
+                    <p>&#8377; 1299</p>
+                    <button onclick="addToCart('Western Dresses for Women: ', 1299)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h7.jpg" alt="Product 2">
+                    <h3>Floral Knotted Split Midi Dress</h3>
+                    <p>&#8377; 999</p>
+                    <button onclick="addToCart('Floral Knotted Split Midi Dress: ', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/h8.jpg" alt="Product 2">
+                    <h3>Casual Brown One Piece Dress</h3>
+                    <p>&#8377; 1099</p>
+                    <button onclick="addToCart('Casual Brown One Piece Dress: ', 1099)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n1.jpg" alt="Product 2">
+                    <h3>Round Neck Casual T-shirt</h3>
+                    <p>&#8377; 399</p>
+                    <button onclick="addToCart('Round Neck Casual T-shirt: ', 399)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n2.jpg" alt="Product 2">
+                    <h3>Polo Collar Short Sleeves T-shirt</h3>
+                    <p>&#8377; 355</p>
+                    <button onclick="addToCart('Polo Collar Short Sleeves T-shirt: ', 355)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n3.jpg" alt="Product 2">
+                    <h3>Cargo Jeans</h3>
+                    <p>&#8377; ₹ 549</p>
+                    <button onclick="addToCart('Cargo Jeans: ', 549)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n4.jpg" alt="Product 2">
+                    <h3>Summer Jacket</h3>
+                    <p>&#8377; ₹ 699</p>
+                    <button onclick="addToCart('Summer Jacket: ', 699)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n5.jpg" alt="Product 2">
+                    <h3>Co-Ort Set</h3>
+                    <p>&#8377; ₹ 1499</p>
+                    <button onclick="addToCart('Co-Ort Set: ', 1499)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n6.jpg" alt="Product 2">
+                    <h3>Jump Suit</h3>
+                    <p>&#8377; ₹ 1199</p>
+                    <button onclick="addToCart('Jump Suit: ', 1199)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n7.jpg" alt="Product 2">
+                    <h3>Short Co-Ort Set</h3>
+                    <p>&#8377; ₹ 1049</p>
+                    <button onclick="addToCart('Short Co-Ort Set: ', 1049)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/products/n8.jpg" alt="Product 2">
+                    <h3>One Piece</h3>
+                    <p>&#8377; ₹ 999</p>
+                    <button onclick="addToCart('One Piece: ', 999)">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2 class="shoppingcart">Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <h3>Total: &#8377; <span id="cart-total">0</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <script src="cartscript.js"></script>
+</body>
+</html>
